@@ -1,0 +1,15 @@
+%:--quiet
+:--nobadresults
+:--fixresulttags
+:--noresults 
+:--notags
+:--nocomments
+:--nonags
+:--novars
+:--nomovenumbers
+:--nochecks
+%:-4
+:-G
+%:-Wuci
+:-t
+FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"

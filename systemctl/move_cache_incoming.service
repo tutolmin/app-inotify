@@ -1,0 +1,12 @@
+[Unit]
+Description=Moves copied gzip files from incoming into web home and cache queue directory
+After=httpd.service
+
+[Service]
+Type=forking
+ExecStart=/home/appch2com/scripts/move_incoming.sh
+User=root
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

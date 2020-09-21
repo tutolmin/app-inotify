@@ -1,0 +1,13 @@
+[Unit]
+Description=Deals with JSON files with move evaluation data
+After=squid.service
+After=httpd.service
+
+[Service]
+Type=forking
+ExecStart=/home/appch2com/scripts/process_evals.sh
+User=root
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Builds a list of URLs and fetch them from the network
+After=squid.service
+After=httpd.service
+
+[Service]
+Type=forking
+ExecStart=/home/appch2com/scripts/curl_extracted.sh
+User=root
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

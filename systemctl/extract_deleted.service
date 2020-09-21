@@ -1,0 +1,13 @@
+[Unit]
+Description=Extracts next gzipped file when hash file deleted in web dir
+After=squid.service
+After=httpd.service
+
+[Service]
+Type=forking
+ExecStart=/home/appch2com/scripts/extract_deleted.sh
+User=root
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

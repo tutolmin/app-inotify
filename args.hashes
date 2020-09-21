@@ -1,0 +1,14 @@
+:--quiet
+:--addhashcode
+:--outputhashfiles
+:--nobadresults
+:--fixresulttags
+:--nocomments
+:--nonags
+:--novars
+:-t standard.tag
+%:--noresults 
+%:--nochecks
+%:--notags
+%:--nomovenumbers
+%:-Wuci
