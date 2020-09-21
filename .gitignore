@@ -1,0 +1,6 @@
+err.*
+log.*
+.elock
+.clock
+nohup.out
+urllist*
